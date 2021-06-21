@@ -1,0 +1,17 @@
+﻿@model MVCpracticeApp.Models.Trip
+
+<article class="blog-post">
+
+    <h1>
+        @Html.ActionLink(Model.Name, "trip", "trip", new { Id = Model.Id })
+    </h1>
+    <div class="details">
+        Date <span>@Model.StartDate</span> - <span>@Model.EndDate</span>
+    </div>
+    <div class="content">
+        @Model.Description
+    </div>
+
+    <button class="btn btn-light ">    @Html.ActionLink("Delete", "delete", "trip", new { Id = Model.Id }) </button>
+
+</article>

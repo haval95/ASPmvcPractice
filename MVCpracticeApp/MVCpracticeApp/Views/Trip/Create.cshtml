@@ -1,0 +1,18 @@
+﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model MVCpracticeApp.Models.Trip
+
+
+@{
+    Layout = "_Layout";
+}
+
+<form asp-action="Create" asp-controller="Trip">
+    <div>Trip/Create</div>
+    <input type="text" placeholder="name" asp-for="Name" />
+    <textarea type="text" placeholder="description" asp-for="Description"></textarea>
+    <input type="date" asp-for="StartDate"/>
+    <input type="date" asp-for="EndDate" />
+
+    <button type="submit" class="btn btn-light">Add </button>
+
+</form>

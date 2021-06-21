@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<DOCTYPE HTML>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>practice </title>
+      
+       
+        <!--make sure mobile devices display the page at the proper scale	-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <link href="/css/site.css" rel="stylesheet" type="text/css" media="screen, projection">
+    </head>
+
+    <body class="p-10">
+
+        <h1 class="Header"> This is the layout for most of the pages</h1>
+      @RenderSection("AddBtn", false)
+        @RenderBody()
+
+
+    </body>
+
+    </html>
